@@ -47,8 +47,7 @@ def process_file(path, filename):
 
 def pdf_parser(path, filename):
     df1 = pd.DataFrame(
-        columns=['Doc Type', 'Document.No', 'Posting Date', 'Bill.No', 'Bill.Date', 'Gross', 'Net.Amt Deductions',
-                 'TDS'])
+        columns=['Doc Type','Document.No','Bill No.','Gross','Net.Amt Deductions','Posting Date','Bill.Date','TDS'])
     k = 0
     with open(path, 'rb') as f:
         content = io.BytesIO(f.read())

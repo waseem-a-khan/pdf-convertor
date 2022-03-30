@@ -6,8 +6,7 @@ import io
 def pdf_extractor(path):
 
     df1 = pd.DataFrame(
-        columns=['Doc Type', 'Document.No', 'Posting Date', 'Bill.No', 'Bill.Date', 'Gross', 'Net.Amt Deductions',
-                 'TDS'])
+        columns=['Doc Type','Document.No','Bill No.','Gross','Net.Amt Deductions','Posting Date','Bill.Date','TDS'])
     k = 0
     with open(path, 'rb') as f:
         content = io.BytesIO(f.read())
